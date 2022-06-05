@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+}
+body, html{
+    background-color: black;
+    height: 100vh;
+}
+h1{
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(98, 255, 98);
+}
+
+header{
+    margin-bottom: 4%;
+}
+.container{
+    width: 400px; 
+    margin: auto; 
+    margin-top: 4%;
+    margin-bottom: 1%;
+    position: relative;
+    top: 50%;
+    text-align: center;
+    background-color: rgb(98, 255, 98);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.dados-music img{
+    width: 250px;
+    height: 200px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.dados-music{
+    margin-bottom: 20px;
+}
+
+.barra{
+    border-radius: 5px;
+    background-color: black;
+    height: 6px;
+    width: 300px;
+    margin: auto;
+    display: flex;
+    border: 1px solid black;
+    align-items: center;
+}
+
+progress{
+    height: 6px;
+    width: 0%;
+    background-color: rgb(94, 82, 82);
+}
+
+.ponto{
+    width: 15px;
+    height: 15px;
+    margin-left: -2px;
+    background-color: rgb(94, 82, 82);
+    border-radius: 50%;
+}
+
+.duracao{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.controls{
+    margin-bottom: 15px;
+}
+
+.controls img{
+    width: 40px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.controls img:hover{
+    transform:scale(1.1);
+}
+
+.vol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vol img{
+    padding: 10px;
+}
+
+.icon-vol{
+    width: 30px;
+}
+
+.btn-vol{
+    width: 20px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.btn-vol:hover{
+    transform: scale(1.2);
+}
+
+.set{
+    border-top: 2px solid black;
+    width: 100%;
+    background-color: rgb(98, 255, 98);
+    margin: auto;
+    width: 400px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.set:hover{
+    background-color: rgba(98, 255, 98, 0.76);
+    cursor: pointer;
+}
+
+.set img{
+    width: 30px;
+}
+
+#musics{
+    margin: auto;
+    width: 400px;
+    margin-top: 2%;
+    background-color: rgb(98, 255, 98);
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.musics-display-off{
+    display: none;
+}
+
+.content{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: space-around;
+    font-size: 15px;
+}
+
+.content:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+#musics img{
+    border-radius: 5px;
+    width: 180px;
+}
+
+.musics-content{
+    width: 40%;
+}
+
+footer{
+    margin-top: 5%;
+    width: 100%;
+    background-color: rgb(98, 255, 98);
+    text-align: center;
+    padding: 20px 0px;
+}

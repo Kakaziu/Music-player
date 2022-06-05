@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/script.js" defer></script>
+</head>
+<body></body>
+    <header>
+        <h1>Music</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="dados-music">
+                <img class="img-prin" src="./assets/img/ab67706c0000bebb6d6d82057ec0649e070cde9f.jfif">
+                <h3 class="title-prin">Quando bate aquela saudade</h3>
+                <p class="autor-prin">Rubel</p>
+                <audio class="audio" src="./assets/aud/Rubel_-_Quando_Bate_Aquela_Saudade_(BornMP3.com).mp3"></audio>
+            </div>
+            <div class="barra">
+                <progress value="0", max="1"></progress>
+                <div class="ponto"></div>
+            </div>
+            <div class="duracao">
+                <p class="com">0:00</p>
+                <p class="fin">6:34</p>
+            </div>
+            <div class="controls">
+                <img class="back" src="./assets/img/4593162_arrow_back_left_music_previous_icon.png">
+                <img class="btn-repro" onclick="repro()" src="./assets/img/repro.png">
+                <img class="prox" src="./assets/img/4593176_media_music_next_play_player_icon.png">
+            </div>
+            <div class="vol">
+                <img onclick="decreaseVol()" id="decrease" class="btn-vol" src="./assets/img/42977.png">
+                <img class="icon-vol" src="./assets/img/6996058.png">
+                <img onclick="increaseVol()" id="increase" class="btn-vol" src="./assets/img/25304.png">
+            </div>
+        </div>
+        <div class="set" onclick="dinamicMenuOn()">
+            <img src="./assets/img/1633716.png">
+        </div>
+
+        <div id="musics" class="musics-display-off">
+            <div class="content" src_img="./assets/img/ab67706c0000bebb6d6d82057ec0649e070cde9f.jfif" src_aud="./assets/aud/Rubel_-_Quando_Bate_Aquela_Saudade_(BornMP3.com).mp3" nome="Quando bate aquela saudade" autor="Rubel" time="395">
+                <img src="./assets/img/ab67706c0000bebb6d6d82057ec0649e070cde9f.jfif">
+                <div class="musics-content">
+                    <h3>Quando bate aquela saudade</h3>
+                    <p>Rubel</p>
+                </div>
+            </div>
+            <div class="content" src_img="./assets/img/ab6761610000e5ebf9f3437fe3ca3a832e6bd096.jfif" src_aud="./assets/aud/MATUÊ - QUER VOAR (GRAVES BASS).mp3" nome="Quer voar" autor="Matuê" time="271">
+                <img src="./assets/img/ab6761610000e5ebf9f3437fe3ca3a832e6bd096.jfif">
+                <div class="musics-content">
+                    <h3>Quer voar</h3>
+                    <p>Matuê</p>
+                </div>
+            </div>
+            <div class="content" src_img="./assets/img/71VdbsX-ZTL._SS500_.jpg" src_aud="assets/aud/Rubel - Partilhar [Áudio Oficial].mp3" nome="Partilhar" autor="Rubel" time="337">
+                <img src="./assets/img/71VdbsX-ZTL._SS500_.jpg">
+                <div class="musics-content">
+                    <h3>Partilhar</h3>
+                    <p>Rubel</p>
+                </div>
+            </div>
+            <div class="content" src_img="assets/img/ab67616d0000b27343f7193e1d691fef20b5ab81.jfif" src_aud="./assets/aud/Matu-A-Morte-do-Autotune_CUFMfGu1yQc.mp3" nome="A morte do autotune" autor="Matuê" time="253">
+                <img src="assets/img/ab67616d0000b27343f7193e1d691fef20b5ab81.jfif">
+                <div class="musics-content">
+                    <h3>A morte do autotune</h3>
+                    <p>Matuê</p>
+                </div>
+            </div>
+            <div class="content" src_img="assets/img/artworks-000568114322-sv1jm9-t500x500.jpg" src_aud="./assets/aud/Sidoka-Porsche-SHOTBYBZK_LdIKmwnLArk.mp3" nome="Porsche" autor="Sidoka" time="205">
+                <img src="assets/img/artworks-000568114322-sv1jm9-t500x500.jpg">
+                <div class="musics-content">
+                    <h3>Porsche</h3>
+                    <p>Sidoka</p>
+                </div>
+            </div>
+            <div class="content" src_img="assets/img/500x500.jpg" src_aud="./assets/aud/Through-the-Valley_gRBq7fPITxw.mp3" nome="Through the valley" autor="Shawn James" time="220">
+                <img src="assets/img/500x500.jpg">
+                <div class="musics-content">
+                    <h3>Through the valley</h3>
+                    <p>Shawn James</p>
+                </div>
+            </div>
+            <div class="content" src_img="assets/img/Arctic Monkeys.jpg" src_aud="./assets/aud/Arctic-Monkeys-R-U-Mine-Official-Video_VQH8ZTgna3Q.mp3" nome="R U mine" autor="Artic Monkeys" time="224">
+                <img src="assets/img/Arctic Monkeys.jpg">
+                <div class="musics-content">
+                    <h3>R U mine</h3>
+                    <p>Artic Monkeys</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h4>Music player - Kauã</h4>
+    </footer>
+</body>
+</html>
