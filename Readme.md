@@ -6,3 +6,9 @@
 - [x] Controles de áudio (pause, volume e etc...)
 - [x] Abrir menu com playlist 
 - [x] Escolher a música desejada manualmente
+
+<br>
+
+<h1 align="center" width="500px">
+    <video src="./videos-readme/video1.mp4" controls width="500px">
+</h1>
