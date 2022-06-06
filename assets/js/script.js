@@ -12,6 +12,7 @@ const decreaseBtn = document.querySelector('#decrease')
 let interval;
 let interval2;
 let index_song = 0
+console.log(index_song)
 
 audio.volume = 0.5
 
@@ -59,7 +60,8 @@ function getEls(div){
         src_aud: div.getAttribute('src_aud'),
         nome: div.getAttribute('nome'),
         autor: div.getAttribute('autor'),
-        time: div.getAttribute('time')
+        time: div.getAttribute('time'),
+        id: div.getAttribute('id')
     }
 }
 
@@ -80,10 +82,13 @@ function renderMusic(num){
     reproBtn.setAttribute('onclick', 'repro()')
     clearInterval(interval2)
     barra.style.width = '0px'
+
     const img = document.querySelector('.img-prin')
     const title = document.querySelector('.title-prin')
     const autor = document.querySelector('.autor-prin')
 
+
+    
     const elsMusic = getEls(divMusic[num])
 
     img.src = elsMusic.src_img
@@ -94,6 +99,7 @@ function renderMusic(num){
         com.innerHTML = segs_min(Math.floor(audio.currentTime))
     }, 1000)
     fin.innerHTML = segs_min(Number(elsMusic.time))
+    index_song = Number(elsMusic.id)
 }
 
 function segs_min(s){
