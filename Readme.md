@@ -9,4 +9,4 @@
 
 <br>
 
-<a href="https://kakaziu.github.io/Music-player/" target="_blank">Projeto --></a>
+<a href="https://kakaziu.github.io/Music-player/">Projeto --></a>
